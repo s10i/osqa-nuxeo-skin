@@ -1,28 +1,13 @@
 <!-- template header.html -->
 {% load extra_tags ui_registry i18n extra_filters markup %}
 
-<div class="header">
-  <div class="logoHome">
-    <a title="Home" href="/">
-      <img height="36" align="left" alt="Nuxeo Community" src="http://www.nuxeo.com/var/storage/community/nuxeo_logo.png">
-    </a>
-  </div>
+  <div id="topBar">
+    <div class="logo-smartt">
+      <a title="Home" href="https://smartt.s10i.com.br">
+        SMARTT
+      </a>
+    </div>
 
-  <div class="externalLinks">
-    <ul>
-      <li><a href="http://community.nuxeo.com/">Home</a></li>
-      <li class="active"><a href="https://answers.nuxeo.com/">Answers</a></li>
-      <li><a href="http://forum.nuxeo.com/">Forums</a></li>
-      <li><a href="http://doc.nuxeo.com/">Documentation</a></li>
-      <li><a href="http://blogs.nuxeo.com/">Blogs</a></li>
-    </ul>
-    <ul class="corp">
-      <li><a href="http://nuxeo.com/">Nuxeo.com</a></li>
-    </ul>
-  </div>
-</div>
-
-  <div id="topBar">  
     <div id="links">
             {% loadregistry header_links %}{% endloadregistry %}
         </div>
@@ -33,6 +18,10 @@
       {{ settings.ANNOUNCEMENT_BAR|or_preview:request|static_content:settings.ANNOUNCEMENT_BAR_RENDER_MODE }}
   </div>
   {% endif %}
+
+<div id="title-box">
+    <h1>Smartt Forum</h1>
+</div>
 
 <div id="roof">
     <div class="ask"><a id="question" href="{% url ask %}" class="special">{% trans "ask a question" %}</a></div>

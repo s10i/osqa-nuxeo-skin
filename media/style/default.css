@@ -151,28 +151,6 @@ h4 {display:block;font-size:90%; font-family:Verdana;color:#ccc;}
     text-align: left;
 }
 
-#header{
-    width:100%;
-    padding:3px 0 10px 0;
-}
-
-#header-links{
-
-}
-
-#header-links a{
-    color:darkred;
-    font-weight:400;
-    font-size:100%;
-    /*letter-spacing:1px;*/
-
-}
-
-#header-links a:hover{
-    text-decoration:none;
-}
-
-
 #content{
     margin-top:5px;
 }
