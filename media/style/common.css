@@ -42,14 +42,25 @@ div.foot .twitter { color: #3cf }
 div.foot .linkedIn { color: #378bb3 }
 div.foot .facebook { color: #6585c6 }
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#fullcontainer {
+    position: relative;
+    min-height: 100%;
+}
+
+#wrapper-padded-container {
     padding-bottom: 75px;
 }
 
 #ground {
-    position: fixed;
-    width: 100%;
+    position: absolute;
     bottom: 0;
+    width: 100%;
     height: 67px;
 }
 

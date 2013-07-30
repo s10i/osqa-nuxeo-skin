@@ -69,6 +69,8 @@
         {% loadregistry head_content %}{% endloadregistry %}
     </head>
     <body>
+    <div id="fullcontainer">
+
         <div class="notify" style="display:none">
             {% autoescape off %}
                 {% if user_messages %}
@@ -139,6 +141,8 @@
                 })();
             </script>
         {% endif %}
+
+    </div>
     </body>
 </html>
 <!-- end template base_content.html -->
